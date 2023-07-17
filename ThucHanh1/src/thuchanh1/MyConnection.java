@@ -14,8 +14,8 @@ public class MyConnection {
     Connection conn = null;
     public Connection getConnect() {
         String database = "quanlytaikhoan";
-        String username ="";
-        String password = "";
+        String username ="root";
+        String password = "011223445aA@";
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String url = "jdbc:sqlserver://127.0.0.1:9999;" + "databaseName=" + database + ";user=" + username + ";password=" + password;

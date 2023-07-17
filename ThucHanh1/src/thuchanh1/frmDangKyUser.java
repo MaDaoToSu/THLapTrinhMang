@@ -17,7 +17,7 @@ public class frmDangKyUser extends javax.swing.JFrame {
      */
     public frmDangKyUser() {
         initComponents();
-         setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -142,25 +142,23 @@ public class frmDangKyUser extends javax.swing.JFrame {
         String password = txtPassword.getText();
         String Path = txtPath.getText();
         int quyen = -1;
-        if (quyen == -1) {
+        if (jRBRead.isSelected()) {
+            quyen = 0;
+        } else if (jRBWrite.isSelected()) {
+            quyen = 1;
+        } else if (jRBFull.isSelected()) {
+            quyen = 2;
+        } else if (quyen == -1) {
             JOptionPane.showMessageDialog(this, "Vui long chon quyen");
-        } else {
-            if (jRBRead.isSelected()) {
-                quyen = 0;
-            } else if (jRBWrite.isSelected()) {
-                quyen = 1;
-            } else if (jRBFull.isSelected()) {
-                quyen = 2;
-            }
-            DbAccess acc = new DbAccess();
-            String Querystr = "insert into taikhoan values('" + username + "','" + password + "','" + Path + "'," + quyen + ")";
-            int kq = acc.update(Querystr);
+        }
+        DbAccess acc = new DbAccess();
+        String Querystr = "insert into taikhoan values('" + username + "','" + password + "','" + Path + "'," + quyen + ")";
+        int kq = acc.update(Querystr);
 
-            if (kq != 0) {
-                JOptionPane.showMessageDialog(this, "Dang ki thanh cong");
-            } else {
-                JOptionPane.showMessageDialog(this, "Dang ki that bai");
-            }
+        if (kq != 0) {
+            JOptionPane.showMessageDialog(this, "Dang ki thanh cong");
+        } else {
+            JOptionPane.showMessageDialog(this, "Dang ki that bai");
         }
 
 
