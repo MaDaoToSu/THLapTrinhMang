@@ -6,7 +6,7 @@ package BTThem.btThem2;
 
 /**
  *
- * @author Admin
+ * @author huyho
  */
 public class ShareData {
     String[] nameList = {"HoTen1", "HoTen2", "HoTen3"};

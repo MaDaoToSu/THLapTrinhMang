@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  *
- * @author Admin
+ * @author huyho
  */
 public class Thread1 extends Thread {
     private SharedData sharedData;

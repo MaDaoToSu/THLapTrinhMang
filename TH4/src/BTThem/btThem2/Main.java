@@ -6,7 +6,7 @@ package BTThem.btThem2;
 
 /**
  *
- * @author Admin
+ * @author huyho
  */
 public class Main {
     public static void main(String[] args) {

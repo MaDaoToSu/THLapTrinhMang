@@ -9,7 +9,7 @@ import javax.swing.*;
 
 /**
  *
- * @author Admin
+ * @author huyho
  */
 public class Ball2 {
     private JPanel box;

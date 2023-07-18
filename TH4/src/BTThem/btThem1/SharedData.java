@@ -6,7 +6,7 @@ package BTThem.btThem1;
 
 /**
  *
- * @author Admin
+ * @author huyho
  */
 public class SharedData {
     private int randomNumber;

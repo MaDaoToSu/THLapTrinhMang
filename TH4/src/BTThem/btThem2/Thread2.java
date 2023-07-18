@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Admin
+ * @author huyho
  */
 public class Thread2 extends Thread{
     ShareData shareData;
